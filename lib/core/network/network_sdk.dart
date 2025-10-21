@@ -7,7 +7,8 @@ class NetworkSdk {
     Dio? dio,
     List<Interceptor> interceptors = const [],
     Map<String, dynamic> defaultHeaders = const {},
-  }) : _dio = dio ?? Dio(BaseOptions(baseUrl: baseUrl)) {
+  })  : _dio = dio ?? Dio(BaseOptions(baseUrl: baseUrl)),
+        _interceptors = List<Interceptor>.from(interceptors) {
     if (_dio.options.baseUrl.isEmpty) {
       _dio.options.baseUrl = baseUrl;
     }
@@ -16,8 +17,8 @@ class NetworkSdk {
       _dio.options.headers.addAll(defaultHeaders);
     }
 
-    if (interceptors.isNotEmpty) {
-      _dio.interceptors.addAll(interceptors);
+    if (_interceptors.isNotEmpty) {
+      _dio.interceptors.addAll(_interceptors);
     }
   }
 
@@ -25,6 +26,9 @@ class NetworkSdk {
   final String baseUrl;
 
   final Dio _dio;
+  final List<Interceptor> _interceptors;
 
   Dio get dio => _dio;
+
+  List<Interceptor> get interceptors => List.unmodifiable(_interceptors);
 }

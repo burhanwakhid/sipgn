@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sipgn/counter/counter.dart';
+import 'package:sipgn/core/router/router.dart';
 import 'package:sipgn/l10n/l10n.dart';
 
 class App extends StatelessWidget {
@@ -7,7 +7,10 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final appRouter = AppRouter();
+
+    return MaterialApp.router(
+      routerConfig: appRouter.config(),
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -16,7 +19,6 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
     );
   }
 }
