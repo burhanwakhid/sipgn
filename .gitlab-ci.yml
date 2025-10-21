@@ -30,33 +30,32 @@ semantic_check:
   stage: verify
   image: python:3.11-slim
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" || $CI_PIPELINE_SOURCE == "schedule" || $CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "pipeline"'
-    - if: "$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS"
-      when: never
-    - if: "$CI_COMMIT_BRANCH"
-    - if: "$CI_COMMIT_TAG"
+    - if: $CI_MERGE_REQUEST_ID
+    - if: $CI_COMMIT_BRANCH == "main"
+    - when: never
   script:
-    - python - <<'PY'
-import os
-import re
-import sys
+    - |
+      python - <<'PY'
+      import os
+      import re
+      import sys
 
-title = os.environ.get("CI_MERGE_REQUEST_TITLE") or os.environ.get("CI_COMMIT_TITLE") or ""
-pattern = r"^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([\w\-/]+\))?!?: .+"
+      title = os.environ.get("CI_MERGE_REQUEST_TITLE") or os.environ.get("CI_COMMIT_TITLE") or ""
+      pattern = r"^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([\w\-/]+\))?!?: .+"
 
-if not title:
-    print("Unable to determine title for semantic validation.")
-    sys.exit(1)
+      if not title:
+          print("Unable to determine title for semantic validation.")
+          sys.exit(1)
 
-if re.match(pattern, title):
-    print(f"Semantic title check passed for: {title!r}")
-    sys.exit(0)
+      if re.match(pattern, title):
+          print(f"Semantic title check passed for: {title!r}")
+          sys.exit(0)
 
-print("Semantic title check failed.")
-print("Expected a Conventional Commit title, e.g. 'feat(core): add new feature'.")
-print(f"Found title: {title!r}")
-sys.exit(1)
-PY
+      print("Semantic title check failed.")
+      print("Expected a Conventional Commit title, e.g. 'feat(core): add new feature'.")
+      print(f"Found title: {title!r}")
+      sys.exit(1)
+      PY
 
 flutter_analyze:
   extends: .flutter_job
