@@ -31,12 +31,12 @@ class SharedPreferencesAuthTokenProvider implements AuthTokenProvider {
 
   @override
   Future<String?> get accessToken async {
-    throw UnimplementedError();
+    return persistence.getValue(_accessTokenKey, '');
   }
 
   @override
   Future<String> refreshToken() async {
-    throw UnimplementedError();
+    return persistence.getValue(_refreshTokenKey, '');
   }
 
   // @override

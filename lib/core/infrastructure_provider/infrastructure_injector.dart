@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:sipgn/core/auth/auth_sdk.dart';
@@ -28,11 +30,12 @@ class InfrastructureInjector extends ServiceInjector {
       config: _config,
       authDio: authDio,
       authSdk: authSdk,
+      headersProvider: () => <String, String>{
+        HttpHeaders.acceptHeader: 'application/json',
+      },
     );
 
-    getIt.registerSingletonAsync<NetworkSdk>(
-      () => initializer.networkSdk,
-    );
+    getIt.registerSingletonAsync<NetworkSdk>(() => initializer.networkSdk);
   }
 
   void _registerPersistenceIfNeeded(GetIt getIt) {

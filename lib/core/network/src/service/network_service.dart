@@ -18,30 +18,20 @@ class NetworkService {
     requestBody?.removeWhere((k, v) => v == null);
     params?.removeWhere((k, v) => v == null);
     final result = await dio.fetch(
-      Options(
-            method: method,
-            headers: headers,
-          )
+      Options(method: method, headers: headers)
           .compose(
             dio.options,
             path,
             queryParameters: params,
             data: requestBody,
           )
-          .copyWith(
-            baseUrl: _combineBaseUrls(
-              dio.options.baseUrl,
-              baseUrl,
-            ),
-          ),
+          .copyWith(baseUrl: _combineBaseUrls(dio.options.baseUrl, baseUrl)),
     );
+
     return result.data;
   }
 
-  String _combineBaseUrls(
-    String dioBaseUrl,
-    String? baseUrl,
-  ) {
+  String _combineBaseUrls(String dioBaseUrl, String? baseUrl) {
     if (baseUrl == null || baseUrl.trim().isEmpty) {
       return dioBaseUrl;
     }
@@ -93,21 +83,9 @@ class HttpMethod {
   static const String patch = 'PATCH';
   static const String head = 'HEAD';
 
-  static const List<String> values = [
-    get,
-    post,
-    put,
-    delete,
-    patch,
-    head,
-  ];
+  static const List<String> values = [get, post, put, delete, patch, head];
 
-  static const Set<String> _idempotent = {
-    get,
-    put,
-    delete,
-    head,
-  };
+  static const Set<String> _idempotent = {get, put, delete, head};
 
   /// Returns uppercased method if supported, otherwise throws.
   static String parse(String method) {
