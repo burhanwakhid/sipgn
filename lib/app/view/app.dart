@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sipgn/core/router/router.dart';
+import 'package:sipgn/core/ui/theme/ui_theme.dart';
+import 'package:sipgn/core/ui/theme/ui_token.dart';
 import 'package:sipgn/l10n/l10n.dart';
 
 class App extends StatelessWidget {
@@ -9,14 +11,15 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     final appRouter = AppRouter();
 
+    final theme = UiThemeData.purpleThemeLight().themeData;
+    final darkTheme = UiThemeData.purpleThemeLight().darkThemeData;
+
     return MaterialApp.router(
       routerConfig: appRouter.config(),
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        ),
-        useMaterial3: true,
-      ),
+      theme: theme,
+      darkTheme: darkTheme,
+      themeMode: ThemeMode.light,
+      color: JSNColorTokens.jsnThemeLight().fillActivePrimary,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
     );

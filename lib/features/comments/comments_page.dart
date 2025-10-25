@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sipgn/core/ui/theme/ui_theme.dart';
 import 'package:sipgn/features/comments/commons/di/di.dart' as comments_di;
 import 'package:sipgn/features/comments/commons/data/models/comment_model.dart';
 import 'package:sipgn/features/comments/commons/data/repository/comment_repository.dart';
@@ -26,8 +27,12 @@ class CommentsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = context.textTheme;
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Comments')),
+      appBar: AppBar(
+        title: Text('Comments', style: textTheme.titleTinyDemiDefault),
+      ),
       body: BlocBuilder<CommentsBloc, CommentsState>(
         builder: (context, state) {
           switch (state.status) {
@@ -55,6 +60,7 @@ class _CommentsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = context.textTheme;
     return ListView.separated(
       itemCount: comments.length,
       padding: const EdgeInsets.symmetric(vertical: 8),
@@ -66,7 +72,7 @@ class _CommentsList extends StatelessWidget {
           subtitle: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(comment.email),
+              Text(comment.email, style: textTheme.bodyModerateDefault),
               const SizedBox(height: 4),
               Text(comment.body),
             ],
