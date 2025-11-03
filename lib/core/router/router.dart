@@ -9,11 +9,10 @@ class AppRouter extends RootStackRouter {
     /// routes go here
     AutoRoute(
       page: CommentsRoute.page,
-      initial: true,
+      initial: false,
       path: '/comments',
-      guards: [
-        CommentConfiguration(),
-      ],
+      guards: [CommentConfiguration()],
     ),
+    AutoRoute(page: LoginRoute.page, initial: true, path: '/login'),
   ];
 }
