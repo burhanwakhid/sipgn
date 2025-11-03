@@ -1,6 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
+const Color baseWhiteColor = Color(0xFFFFFFFF);
+const Color contentPrimaryColor = Color(0xFF141414);
+const Color contentSecondaryColor = Color(0xFF525252);
+const Color positiveButtonBackgroundColor = Color(0xFF071E49);
+const Color strokePrimaryColor = Color(0xFFE5E5E5);
+
 @immutable
 class JSNTypographyTokens {
   const JSNTypographyTokens._({
@@ -28,7 +34,31 @@ class JSNTypographyTokens {
     required this.bodySmallFontSize,
     required this.bodySmallFontWeight,
     required this.bodySmallLineHeight,
-
+    required this.bodySmallSemiboldDefaultColor,
+    required this.bodySmallSemiboldFontFamily,
+    required this.bodySmallSemiboldFontSize,
+    required this.bodySmallSemiboldFontWeight,
+    required this.bodySmallSemiboldLineHeight,
+    required this.headingH5DefaultColor,
+    required this.headingH5FontFamily,
+    required this.headingH5FontSize,
+    required this.headingH5FontWeight,
+    required this.headingH5LineHeight,
+    required this.captionRegularDefaultColor,
+    required this.captionRegularFontFamily,
+    required this.captionRegularFontSize,
+    required this.captionRegularFontWeight,
+    required this.captionRegularLineHeight,
+    required this.captionMediumDefaultColor,
+    required this.captionMediumFontFamily,
+    required this.captionMediumFontSize,
+    required this.captionMediumFontWeight,
+    required this.captionMediumLineHeight,
+    required this.captionSmallRegularColor,
+    required this.captionSmallRegularFontFamily,
+    required this.captionSmallRegularFontSize,
+    required this.captionSmallRegularFontWeight,
+    required this.captionSmallRegularLineHeight,
     required this.titleTinyDemiActiveColor,
     required this.titleTinyDemiErrorColor,
     required this.titleTinyDemiInactiveColor,
@@ -53,7 +83,7 @@ class JSNTypographyTokens {
       bodyModerateStaticWhiteColor: Color(0xFFFCFCFD),
       bodyModerateWarningColor: Color(0xFFFFA927),
       bodyModerateDefaultColor: Color(0xFFB2B5B9),
-      bodyModerateFontFamily: "Rupa Sans",
+      bodyModerateFontFamily: "Inter",
       bodyModerateFontSize: 16,
       bodyModerateFontWeight: FontWeight.w400,
       bodyModerateLineHeight: 20,
@@ -65,11 +95,35 @@ class JSNTypographyTokens {
       bodySmallStaticWhiteColor: Color(0xFFFCFCFD),
       bodySmallWarningColor: Color(0xFFFFA927),
       bodySmallDefaultColor: Color(0xFFB2B5B9),
-      bodySmallFontFamily: "Rupa Sans",
+      bodySmallFontFamily: "Inter",
       bodySmallFontSize: 14,
       bodySmallFontWeight: FontWeight.w400,
       bodySmallLineHeight: 20,
-
+      bodySmallSemiboldDefaultColor: baseWhiteColor,
+      bodySmallSemiboldFontFamily: "Inter",
+      bodySmallSemiboldFontSize: 16,
+      bodySmallSemiboldFontWeight: FontWeight.w600,
+      bodySmallSemiboldLineHeight: 24,
+      headingH5DefaultColor: baseWhiteColor,
+      headingH5FontFamily: "Inter",
+      headingH5FontSize: 24,
+      headingH5FontWeight: FontWeight.w700,
+      headingH5LineHeight: 32,
+      captionRegularDefaultColor: baseWhiteColor,
+      captionRegularFontFamily: "Inter",
+      captionRegularFontSize: 14,
+      captionRegularFontWeight: FontWeight.w400,
+      captionRegularLineHeight: 20,
+      captionMediumDefaultColor: contentPrimaryColor,
+      captionMediumFontFamily: "Inter",
+      captionMediumFontSize: 14,
+      captionMediumFontWeight: FontWeight.w500,
+      captionMediumLineHeight: 20,
+      captionSmallRegularColor: contentSecondaryColor,
+      captionSmallRegularFontFamily: "Inter",
+      captionSmallRegularFontSize: 12,
+      captionSmallRegularFontWeight: FontWeight.w400,
+      captionSmallRegularLineHeight: 16,
       titleTinyDemiActiveColor: Color(0xFF00CCFB),
       titleTinyDemiErrorColor: Color(0xFFFF323D),
       titleTinyDemiInactiveColor: Color(0xFF727A80),
@@ -78,7 +132,7 @@ class JSNTypographyTokens {
       titleTinyDemiStaticWhiteColor: Color(0xFFFCFCFD),
       titleTinyDemiWarningColor: Color(0xFFFFA927),
       titleTinyDemiDefaultColor: Color(0xFFE3E5E8),
-      titleTinyDemiFontFamily: "Rupa Sans",
+      titleTinyDemiFontFamily: "Inter",
       titleTinyDemiFontSize: 14,
       titleTinyDemiFontWeight: FontWeight.w600,
       titleTinyDemiLineHeight: 20,
@@ -95,7 +149,7 @@ class JSNTypographyTokens {
       bodyModerateStaticWhiteColor: Color(0xFFFCFCFD),
       bodyModerateWarningColor: Color(0xFFBD5204),
       bodyModerateDefaultColor: Color(0xFF616E7A),
-      bodyModerateFontFamily: "Rupa Sans",
+      bodyModerateFontFamily: "Inter",
       bodyModerateFontSize: 16,
       bodyModerateFontWeight: FontWeight.w400,
       bodyModerateLineHeight: 20,
@@ -107,11 +161,35 @@ class JSNTypographyTokens {
       bodySmallStaticWhiteColor: Color(0xFFFCFCFD),
       bodySmallWarningColor: Color(0xFFBD5204),
       bodySmallDefaultColor: Color(0xFF616E7A),
-      bodySmallFontFamily: "Rupa Sans",
+      bodySmallFontFamily: "Inter",
       bodySmallFontSize: 14,
       bodySmallFontWeight: FontWeight.w400,
       bodySmallLineHeight: 20,
-
+      bodySmallSemiboldDefaultColor: baseWhiteColor,
+      bodySmallSemiboldFontFamily: "Inter",
+      bodySmallSemiboldFontSize: 16,
+      bodySmallSemiboldFontWeight: FontWeight.w600,
+      bodySmallSemiboldLineHeight: 24,
+      headingH5DefaultColor: baseWhiteColor,
+      headingH5FontFamily: "Inter",
+      headingH5FontSize: 24,
+      headingH5FontWeight: FontWeight.w700,
+      headingH5LineHeight: 32,
+      captionRegularDefaultColor: baseWhiteColor,
+      captionRegularFontFamily: "Inter",
+      captionRegularFontSize: 14,
+      captionRegularFontWeight: FontWeight.w400,
+      captionRegularLineHeight: 20,
+      captionMediumDefaultColor: contentPrimaryColor,
+      captionMediumFontFamily: "Inter",
+      captionMediumFontSize: 14,
+      captionMediumFontWeight: FontWeight.w500,
+      captionMediumLineHeight: 20,
+      captionSmallRegularColor: contentSecondaryColor,
+      captionSmallRegularFontFamily: "Inter",
+      captionSmallRegularFontSize: 12,
+      captionSmallRegularFontWeight: FontWeight.w400,
+      captionSmallRegularLineHeight: 16,
       titleTinyDemiActiveColor: Color(0xFF00CCFB),
       titleTinyDemiErrorColor: Color(0xFFDA5858),
       titleTinyDemiInactiveColor: Color(0xFF949EA8),
@@ -120,7 +198,7 @@ class JSNTypographyTokens {
       titleTinyDemiStaticWhiteColor: Color(0xFFFCFCFD),
       titleTinyDemiWarningColor: Color(0xFFBD5204),
       titleTinyDemiDefaultColor: Color(0xFF1E2225),
-      titleTinyDemiFontFamily: "Rupa Sans",
+      titleTinyDemiFontFamily: "Inter",
       titleTinyDemiFontSize: 14,
       titleTinyDemiFontWeight: FontWeight.w600,
       titleTinyDemiLineHeight: 20,
@@ -137,7 +215,7 @@ class JSNTypographyTokens {
       bodyModerateStaticWhiteColor: Color(0xFFFFFFFF),
       bodyModerateWarningColor: Color(0xFFFFAB2E),
       bodyModerateDefaultColor: Color(0xFFBCBDBD),
-      bodyModerateFontFamily: "Maison Neue APP",
+      bodyModerateFontFamily: "Inter",
       bodyModerateFontSize: 16,
       bodyModerateFontWeight: FontWeight.w400,
       bodyModerateLineHeight: 20,
@@ -149,11 +227,35 @@ class JSNTypographyTokens {
       bodySmallStaticWhiteColor: Color(0xFFFFFFFF),
       bodySmallWarningColor: Color(0xFFFFAB2E),
       bodySmallDefaultColor: Color(0xFFBCBDBD),
-      bodySmallFontFamily: "Maison Neue APP",
+      bodySmallFontFamily: "Inter",
       bodySmallFontSize: 14,
       bodySmallFontWeight: FontWeight.w400,
       bodySmallLineHeight: 20,
-
+      bodySmallSemiboldDefaultColor: baseWhiteColor,
+      bodySmallSemiboldFontFamily: "Inter",
+      bodySmallSemiboldFontSize: 16,
+      bodySmallSemiboldFontWeight: FontWeight.w600,
+      bodySmallSemiboldLineHeight: 24,
+      headingH5DefaultColor: baseWhiteColor,
+      headingH5FontFamily: "Inter",
+      headingH5FontSize: 24,
+      headingH5FontWeight: FontWeight.w700,
+      headingH5LineHeight: 32,
+      captionRegularDefaultColor: baseWhiteColor,
+      captionRegularFontFamily: "Inter",
+      captionRegularFontSize: 14,
+      captionRegularFontWeight: FontWeight.w400,
+      captionRegularLineHeight: 20,
+      captionMediumDefaultColor: contentPrimaryColor,
+      captionMediumFontFamily: "Inter",
+      captionMediumFontSize: 14,
+      captionMediumFontWeight: FontWeight.w500,
+      captionMediumLineHeight: 20,
+      captionSmallRegularColor: contentSecondaryColor,
+      captionSmallRegularFontFamily: "Inter",
+      captionSmallRegularFontSize: 12,
+      captionSmallRegularFontWeight: FontWeight.w400,
+      captionSmallRegularLineHeight: 16,
       titleTinyDemiActiveColor: Color(0xFFBF59CF),
       titleTinyDemiErrorColor: Color(0xFFFF2E4A),
       titleTinyDemiInactiveColor: Color(0xFF757575),
@@ -162,7 +264,7 @@ class JSNTypographyTokens {
       titleTinyDemiStaticWhiteColor: Color(0xFFFFFFFF),
       titleTinyDemiWarningColor: Color(0xFFFFAB2E),
       titleTinyDemiDefaultColor: Color(0xFFFFFFFF),
-      titleTinyDemiFontFamily: "Maison Neue APP",
+      titleTinyDemiFontFamily: "Inter",
       titleTinyDemiFontSize: 14,
       titleTinyDemiFontWeight: FontWeight.w600,
       titleTinyDemiLineHeight: 20,
@@ -179,7 +281,7 @@ class JSNTypographyTokens {
       bodyModerateStaticWhiteColor: Color(0xFFFFFFFF),
       bodyModerateWarningColor: Color(0xFFA54703),
       bodyModerateDefaultColor: Color(0xFF494A4A),
-      bodyModerateFontFamily: "Maison Neue APP",
+      bodyModerateFontFamily: "Inter",
       bodyModerateFontSize: 16,
       bodyModerateFontWeight: FontWeight.w400,
       bodyModerateLineHeight: 20,
@@ -191,11 +293,35 @@ class JSNTypographyTokens {
       bodySmallStaticWhiteColor: Color(0xFFFFFFFF),
       bodySmallWarningColor: Color(0xFFA54703),
       bodySmallDefaultColor: Color(0xFF494A4A),
-      bodySmallFontFamily: "Maison Neue APP",
+      bodySmallFontFamily: "Inter",
       bodySmallFontSize: 14,
       bodySmallFontWeight: FontWeight.w400,
       bodySmallLineHeight: 20,
-
+      bodySmallSemiboldDefaultColor: baseWhiteColor,
+      bodySmallSemiboldFontFamily: "Inter",
+      bodySmallSemiboldFontSize: 16,
+      bodySmallSemiboldFontWeight: FontWeight.w600,
+      bodySmallSemiboldLineHeight: 24,
+      headingH5DefaultColor: baseWhiteColor,
+      headingH5FontFamily: "Inter",
+      headingH5FontSize: 24,
+      headingH5FontWeight: FontWeight.w700,
+      headingH5LineHeight: 32,
+      captionRegularDefaultColor: baseWhiteColor,
+      captionRegularFontFamily: "Inter",
+      captionRegularFontSize: 14,
+      captionRegularFontWeight: FontWeight.w400,
+      captionRegularLineHeight: 20,
+      captionMediumDefaultColor: contentPrimaryColor,
+      captionMediumFontFamily: "Inter",
+      captionMediumFontSize: 14,
+      captionMediumFontWeight: FontWeight.w500,
+      captionMediumLineHeight: 20,
+      captionSmallRegularColor: contentSecondaryColor,
+      captionSmallRegularFontFamily: "Inter",
+      captionSmallRegularFontSize: 12,
+      captionSmallRegularFontWeight: FontWeight.w400,
+      captionSmallRegularLineHeight: 16,
       titleTinyDemiActiveColor: Color(0xFF8F2E9E),
       titleTinyDemiErrorColor: Color(0xFFC7001B),
       titleTinyDemiInactiveColor: Color(0xFF757575),
@@ -204,7 +330,7 @@ class JSNTypographyTokens {
       titleTinyDemiStaticWhiteColor: Color(0xFFFFFFFF),
       titleTinyDemiWarningColor: Color(0xFFA54703),
       titleTinyDemiDefaultColor: Color(0xFF1C1D1D),
-      titleTinyDemiFontFamily: "Maison Neue APP",
+      titleTinyDemiFontFamily: "Inter",
       titleTinyDemiFontSize: 14,
       titleTinyDemiFontWeight: FontWeight.w600,
       titleTinyDemiLineHeight: 20,
@@ -235,6 +361,11 @@ class JSNTypographyTokens {
   final double bodySmallFontSize;
   final FontWeight bodySmallFontWeight;
   final double bodySmallLineHeight;
+  final Color bodySmallSemiboldDefaultColor;
+  final String bodySmallSemiboldFontFamily;
+  final double bodySmallSemiboldFontSize;
+  final FontWeight bodySmallSemiboldFontWeight;
+  final double bodySmallSemiboldLineHeight;
 
   final Color titleTinyDemiActiveColor;
   final Color titleTinyDemiErrorColor;
@@ -248,6 +379,28 @@ class JSNTypographyTokens {
   final double titleTinyDemiFontSize;
   final FontWeight titleTinyDemiFontWeight;
   final double titleTinyDemiLineHeight;
+
+  final Color headingH5DefaultColor;
+  final String headingH5FontFamily;
+  final double headingH5FontSize;
+  final FontWeight headingH5FontWeight;
+  final double headingH5LineHeight;
+
+  final Color captionRegularDefaultColor;
+  final String captionRegularFontFamily;
+  final double captionRegularFontSize;
+  final FontWeight captionRegularFontWeight;
+  final double captionRegularLineHeight;
+  final Color captionMediumDefaultColor;
+  final String captionMediumFontFamily;
+  final double captionMediumFontSize;
+  final FontWeight captionMediumFontWeight;
+  final double captionMediumLineHeight;
+  final Color captionSmallRegularColor;
+  final String captionSmallRegularFontFamily;
+  final double captionSmallRegularFontSize;
+  final FontWeight captionSmallRegularFontWeight;
+  final double captionSmallRegularLineHeight;
 
   @override
   bool operator ==(covariant JSNTypographyTokens other) {
@@ -277,6 +430,31 @@ class JSNTypographyTokens {
         other.bodySmallFontSize == bodySmallFontSize &&
         other.bodySmallFontWeight == bodySmallFontWeight &&
         other.bodySmallLineHeight == bodySmallLineHeight &&
+        other.bodySmallSemiboldDefaultColor == bodySmallSemiboldDefaultColor &&
+        other.bodySmallSemiboldFontFamily == bodySmallSemiboldFontFamily &&
+        other.bodySmallSemiboldFontSize == bodySmallSemiboldFontSize &&
+        other.bodySmallSemiboldFontWeight == bodySmallSemiboldFontWeight &&
+        other.bodySmallSemiboldLineHeight == bodySmallSemiboldLineHeight &&
+        other.headingH5DefaultColor == headingH5DefaultColor &&
+        other.headingH5FontFamily == headingH5FontFamily &&
+        other.headingH5FontSize == headingH5FontSize &&
+        other.headingH5FontWeight == headingH5FontWeight &&
+        other.headingH5LineHeight == headingH5LineHeight &&
+        other.captionRegularDefaultColor == captionRegularDefaultColor &&
+        other.captionRegularFontFamily == captionRegularFontFamily &&
+        other.captionRegularFontSize == captionRegularFontSize &&
+        other.captionRegularFontWeight == captionRegularFontWeight &&
+        other.captionRegularLineHeight == captionRegularLineHeight &&
+        other.captionMediumDefaultColor == captionMediumDefaultColor &&
+        other.captionMediumFontFamily == captionMediumFontFamily &&
+        other.captionMediumFontSize == captionMediumFontSize &&
+        other.captionMediumFontWeight == captionMediumFontWeight &&
+        other.captionMediumLineHeight == captionMediumLineHeight &&
+        other.captionSmallRegularColor == captionSmallRegularColor &&
+        other.captionSmallRegularFontFamily == captionSmallRegularFontFamily &&
+        other.captionSmallRegularFontSize == captionSmallRegularFontSize &&
+        other.captionSmallRegularFontWeight == captionSmallRegularFontWeight &&
+        other.captionSmallRegularLineHeight == captionSmallRegularLineHeight &&
         other.titleTinyDemiActiveColor == titleTinyDemiActiveColor &&
         other.titleTinyDemiErrorColor == titleTinyDemiErrorColor &&
         other.titleTinyDemiInactiveColor == titleTinyDemiInactiveColor &&
@@ -317,6 +495,31 @@ class JSNTypographyTokens {
         bodySmallFontSize.hashCode ^
         bodySmallFontWeight.hashCode ^
         bodySmallLineHeight.hashCode ^
+        bodySmallSemiboldDefaultColor.hashCode ^
+        bodySmallSemiboldFontFamily.hashCode ^
+        bodySmallSemiboldFontSize.hashCode ^
+        bodySmallSemiboldFontWeight.hashCode ^
+        bodySmallSemiboldLineHeight.hashCode ^
+        headingH5DefaultColor.hashCode ^
+        headingH5FontFamily.hashCode ^
+        headingH5FontSize.hashCode ^
+        headingH5FontWeight.hashCode ^
+        headingH5LineHeight.hashCode ^
+        captionRegularDefaultColor.hashCode ^
+        captionRegularFontFamily.hashCode ^
+        captionRegularFontSize.hashCode ^
+        captionRegularFontWeight.hashCode ^
+        captionRegularLineHeight.hashCode ^
+        captionMediumDefaultColor.hashCode ^
+        captionMediumFontFamily.hashCode ^
+        captionMediumFontSize.hashCode ^
+        captionMediumFontWeight.hashCode ^
+        captionMediumLineHeight.hashCode ^
+        captionSmallRegularColor.hashCode ^
+        captionSmallRegularFontFamily.hashCode ^
+        captionSmallRegularFontSize.hashCode ^
+        captionSmallRegularFontWeight.hashCode ^
+        captionSmallRegularLineHeight.hashCode ^
         titleTinyDemiActiveColor.hashCode ^
         titleTinyDemiErrorColor.hashCode ^
         titleTinyDemiInactiveColor.hashCode ^
@@ -412,91 +615,91 @@ class _TextTheme {
   static TextTheme jsnThemeDark() {
     return const TextTheme(
       headlineMedium: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 18,
         color: Color(0xFFE3E5E8),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleMedium: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 13,
         color: Color(0xFFB2B5B9),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       headlineSmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFFE3E5E8),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodyMedium: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFFB2B5B9),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displayLarge: TextStyle(
-        fontFamily: 'Rupa Serif',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 28,
         color: Color(0xFFE3E5E8),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displaySmall: TextStyle(
-        fontFamily: 'Rupa Serif',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 21,
         color: Color(0xFFE3E5E8),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelLarge: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFFE3E5E8),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelSmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 12,
         color: Color(0xFFB2B5B9),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleLarge: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 14,
         color: Color(0xFFE3E5E8),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleSmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 12,
         color: Color(0xFFB2B5B9),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displayMedium: TextStyle(
-        fontFamily: 'Rupa Serif',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 24,
         color: Color(0xFFE3E5E8),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodyLarge: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFFB2B5B9),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodySmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFFB2B5B9),
@@ -508,91 +711,91 @@ class _TextTheme {
   static TextTheme jsnThemeLight() {
     return const TextTheme(
       displayMedium: TextStyle(
-        fontFamily: 'Rupa Serif',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 24,
         color: Color(0xFF1E2225),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       headlineMedium: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 18,
         color: Color(0xFF1E2225),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelSmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 12,
         color: Color(0xFF616E7A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleMedium: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 13,
         color: Color(0xFF616E7A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleSmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 12,
         color: Color(0xFF616E7A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodySmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFF616E7A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displayLarge: TextStyle(
-        fontFamily: 'Rupa Serif',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 28,
         color: Color(0xFF1E2225),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleLarge: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 14,
         color: Color(0xFF1E2225),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       headlineSmall: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFF1E2225),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelLarge: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFF1E2225),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displaySmall: TextStyle(
-        fontFamily: 'Rupa Serif',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 21,
         color: Color(0xFF1E2225),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodyLarge: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFF616E7A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodyMedium: TextStyle(
-        fontFamily: 'Rupa Sans',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFF616E7A),
@@ -604,91 +807,91 @@ class _TextTheme {
   static TextTheme purpleThemeDark() {
     return const TextTheme(
       bodyMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFFBCBDBD),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displaySmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 21,
         color: Color(0xFFFFFFFF),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodyLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFFBCBDBD),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFFFFFFFF),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelSmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 12,
         color: Color(0xFFBCBDBD),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       headlineMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 18,
         color: Color(0xFFFFFFFF),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleSmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 12,
         color: Color(0xFFBCBDBD),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displayMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 24,
         color: Color(0xFFFFFFFF),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 14,
         color: Color(0xFFFFFFFF),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodySmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFFBCBDBD),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       headlineSmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFFFFFFFF),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 13,
         color: Color(0xFFBCBDBD),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displayLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 28,
         color: Color(0xFFFFFFFF),
@@ -700,91 +903,91 @@ class _TextTheme {
   static TextTheme purpleThemeLight() {
     return const TextTheme(
       displayMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 24,
         color: Color(0xFF1C1D1D),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displaySmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 21,
         color: Color(0xFF1C1D1D),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       headlineMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 18,
         color: Color(0xFF1C1D1D),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       headlineSmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFF1C1D1D),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodyLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFF494A4A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodySmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFF494A4A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleSmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 12,
         color: Color(0xFF494A4A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 16,
         color: Color(0xFF1C1D1D),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 14,
         color: Color(0xFF1C1D1D),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       labelSmall: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 12,
         color: Color(0xFF494A4A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       bodyMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: Color(0xFF494A4A),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       displayLarge: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w700,
         fontSize: 28,
         color: Color(0xFF1C1D1D),
         leadingDistribution: TextLeadingDistribution.even,
       ),
       titleMedium: TextStyle(
-        fontFamily: 'Maison Neue APP',
+        fontFamily: 'Inter',
         fontWeight: FontWeight.w600,
         fontSize: 13,
         color: Color(0xFF494A4A),
@@ -957,6 +1160,7 @@ class JSNColorTokens {
     required this.borderStaticBlack,
     required this.borderStaticWhite,
     required this.borderWarning,
+    required this.borderStrokePrimary,
     required this.fillActivePrimary,
     required this.fillActiveSecondary,
     required this.fillBackgroundPrimary,
@@ -973,6 +1177,7 @@ class JSNColorTokens {
     required this.fillPressed,
     required this.fillStaticBlack,
     required this.fillStaticWhite,
+    required this.fillButtonPositive,
     required this.fillWarningPrimary,
     required this.fillWarningSecondary,
     required this.iconDynamicActive,
@@ -1006,6 +1211,7 @@ class JSNColorTokens {
       borderStaticBlack: Color(0xFF1E2125),
       borderStaticWhite: Color(0xFFFCFCFD),
       borderWarning: Color(0xFFE8900E),
+      borderStrokePrimary: strokePrimaryColor,
       fillActivePrimary: Color(0xFF3772FF),
       fillActiveSecondary: Color(0xFFD7E2FF),
       fillBackgroundPrimary: Color(0xFFFFFFFF),
@@ -1022,6 +1228,7 @@ class JSNColorTokens {
       fillPressed: Color(0x1A000000),
       fillStaticBlack: Color(0xFF1E2125),
       fillStaticWhite: Color(0xFFFCFCFD),
+      fillButtonPositive: positiveButtonBackgroundColor,
       fillWarningPrimary: Color(0xFFE8900E),
       fillWarningSecondary: Color(0xFFFFF8ED),
       iconDynamicActive: Color(0xFF202C42),
@@ -1056,6 +1263,7 @@ class JSNColorTokens {
       borderStaticBlack: Color(0xFF101214),
       borderStaticWhite: Color(0xFFE3E5E8),
       borderWarning: Color(0xFFA66300),
+      borderStrokePrimary: strokePrimaryColor,
       fillActivePrimary: Color(0xFF00CCFB),
       fillActiveSecondary: Color(0xFF080708),
       fillBackgroundPrimary: Color(0xFF1E2325),
@@ -1072,6 +1280,7 @@ class JSNColorTokens {
       fillPressed: Color(0x1AFFFFFF),
       fillStaticBlack: Color(0xFF101214),
       fillStaticWhite: Color(0xFFFCFCFD),
+      fillButtonPositive: positiveButtonBackgroundColor,
       fillWarningPrimary: Color(0xFFA66300),
       fillWarningSecondary: Color(0xFF3E321F),
       iconDynamicActive: Color(0xFF00CCFB),
@@ -1106,6 +1315,7 @@ class JSNColorTokens {
       borderStaticBlack: Color(0xFF1C1D1D),
       borderStaticWhite: Color(0xFFFFFFFF),
       borderWarning: Color(0xFFE8900E),
+      borderStrokePrimary: strokePrimaryColor,
       fillActivePrimary: Color(0xFF8F2E9E),
       fillActiveSecondary: Color(0xFFFBF2FD),
       fillBackgroundPrimary: Color(0xFFFFFFFF),
@@ -1122,6 +1332,7 @@ class JSNColorTokens {
       fillPressed: Color(0x1A000000),
       fillStaticBlack: Color(0xFF1C1D1D),
       fillStaticWhite: Color(0xFFFFFFFF),
+      fillButtonPositive: positiveButtonBackgroundColor,
       fillWarningPrimary: Color(0xFFE8900E),
       fillWarningSecondary: Color(0xFFFFF5E5),
       iconDynamicActive: Color(0xFF8F2E9E),
@@ -1156,6 +1367,7 @@ class JSNColorTokens {
       borderStaticBlack: Color(0xFF0F0F0F),
       borderStaticWhite: Color(0xFFFFFFFF),
       borderWarning: Color(0xFFA86500),
+      borderStrokePrimary: strokePrimaryColor,
       fillActivePrimary: Color(0xFFB641C8),
       fillActiveSecondary: Color(0xFF380A42),
       fillBackgroundPrimary: Color(0xFF0F0F0F),
@@ -1172,6 +1384,7 @@ class JSNColorTokens {
       fillPressed: Color(0x1AFFFFFF),
       fillStaticBlack: Color(0xFF0F0F0F),
       fillStaticWhite: Color(0xFFFFFFFF),
+      fillButtonPositive: positiveButtonBackgroundColor,
       fillWarningPrimary: Color(0xFFA86500),
       fillWarningSecondary: Color(0xFF251E13),
       iconDynamicActive: Color(0xFFB641C8),
@@ -1204,6 +1417,7 @@ class JSNColorTokens {
   final Color borderStaticBlack;
   final Color borderStaticWhite;
   final Color borderWarning;
+  final Color borderStrokePrimary;
   final Color fillActivePrimary;
   final Color fillActiveSecondary;
   final Color fillBackgroundPrimary;
@@ -1220,6 +1434,7 @@ class JSNColorTokens {
   final Color fillPressed;
   final Color fillStaticBlack;
   final Color fillStaticWhite;
+  final Color fillButtonPositive;
   final Color fillWarningPrimary;
   final Color fillWarningSecondary;
   final Color iconDynamicActive;
@@ -1254,6 +1469,7 @@ class JSNColorTokens {
           borderStaticBlack == other.borderStaticBlack &&
           borderStaticWhite == other.borderStaticWhite &&
           borderWarning == other.borderWarning &&
+          borderStrokePrimary == other.borderStrokePrimary &&
           fillActivePrimary == other.fillActivePrimary &&
           fillActiveSecondary == other.fillActiveSecondary &&
           fillBackgroundPrimary == other.fillBackgroundPrimary &&
@@ -1270,6 +1486,7 @@ class JSNColorTokens {
           fillPressed == other.fillPressed &&
           fillStaticBlack == other.fillStaticBlack &&
           fillStaticWhite == other.fillStaticWhite &&
+          fillButtonPositive == other.fillButtonPositive &&
           fillWarningPrimary == other.fillWarningPrimary &&
           fillWarningSecondary == other.fillWarningSecondary &&
           iconDynamicActive == other.iconDynamicActive &&
@@ -1302,6 +1519,7 @@ class JSNColorTokens {
       borderStaticBlack.hashCode ^
       borderStaticWhite.hashCode ^
       borderWarning.hashCode ^
+      borderStrokePrimary.hashCode ^
       fillActivePrimary.hashCode ^
       fillActiveSecondary.hashCode ^
       fillBackgroundPrimary.hashCode ^
@@ -1316,8 +1534,9 @@ class JSNColorTokens {
       fillMuteSecondary.hashCode ^
       fillOverlay.hashCode ^
       fillPressed.hashCode ^
-      fillStaticBlack.hashCode ^
-      fillStaticWhite.hashCode ^
+          fillStaticBlack.hashCode ^
+          fillStaticWhite.hashCode ^
+          fillButtonPositive.hashCode ^
       fillWarningPrimary.hashCode ^
       fillWarningSecondary.hashCode ^
       iconDynamicActive.hashCode ^
@@ -1367,6 +1586,50 @@ class JSNTextTheme {
     fontSize: tokens.bodyModerateFontSize,
     color: tokens.bodyModerateActiveColor,
     height: tokens.bodyModerateLineHeight / tokens.bodyModerateFontSize,
+    leadingDistribution: TextLeadingDistribution.even,
+  );
+
+  TextStyle get headingH5Bold => TextStyle(
+    package: 'jsn_ui',
+    fontFamily: tokens.headingH5FontFamily,
+    fontWeight: tokens.headingH5FontWeight,
+    fontSize: tokens.headingH5FontSize,
+    color: tokens.headingH5DefaultColor,
+    height: tokens.headingH5LineHeight / tokens.headingH5FontSize,
+    leadingDistribution: TextLeadingDistribution.even,
+  );
+
+  TextStyle get captionRegular => TextStyle(
+    package: 'jsn_ui',
+    fontFamily: tokens.captionRegularFontFamily,
+    fontWeight: tokens.captionRegularFontWeight,
+    fontSize: tokens.captionRegularFontSize,
+    color: tokens.captionRegularDefaultColor,
+    height: tokens.captionRegularLineHeight / tokens.captionRegularFontSize,
+    letterSpacing: 0,
+    leadingDistribution: TextLeadingDistribution.even,
+  );
+
+  TextStyle get captionMedium => TextStyle(
+    package: 'jsn_ui',
+    fontFamily: tokens.captionMediumFontFamily,
+    fontWeight: tokens.captionMediumFontWeight,
+    fontSize: tokens.captionMediumFontSize,
+    color: tokens.captionMediumDefaultColor,
+    height: tokens.captionMediumLineHeight / tokens.captionMediumFontSize,
+    letterSpacing: 0,
+    leadingDistribution: TextLeadingDistribution.even,
+  );
+
+  TextStyle get captionSmallRegular => TextStyle(
+    package: 'jsn_ui',
+    fontFamily: tokens.captionSmallRegularFontFamily,
+    fontWeight: tokens.captionSmallRegularFontWeight,
+    fontSize: tokens.captionSmallRegularFontSize,
+    color: tokens.captionSmallRegularColor,
+    height:
+        tokens.captionSmallRegularLineHeight / tokens.captionSmallRegularFontSize,
+    letterSpacing: 0,
     leadingDistribution: TextLeadingDistribution.even,
   );
 
@@ -1527,6 +1790,17 @@ class JSNTextTheme {
     fontSize: tokens.bodySmallFontSize,
     color: tokens.bodySmallDefaultColor,
     height: tokens.bodySmallLineHeight / tokens.bodySmallFontSize,
+    leadingDistribution: TextLeadingDistribution.even,
+  );
+
+  TextStyle get bodySmallSemibold => TextStyle(
+    package: 'jsn_ui',
+    fontFamily: tokens.bodySmallSemiboldFontFamily,
+    fontWeight: tokens.bodySmallSemiboldFontWeight,
+    fontSize: tokens.bodySmallSemiboldFontSize,
+    color: tokens.bodySmallSemiboldDefaultColor,
+    height: tokens.bodySmallSemiboldLineHeight / tokens.bodySmallSemiboldFontSize,
+    letterSpacing: 0,
     leadingDistribution: TextLeadingDistribution.even,
   );
 

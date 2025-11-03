@@ -35,3 +35,9 @@ dev_dependencies:
 flutter:
   generate: true
   uses-material-design: true
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf
+        - asset: assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf
+          style: italic
